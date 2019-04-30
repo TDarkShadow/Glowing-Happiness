@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Overseer";
+  src: url("fonts/Overseer.ttf");
+}
+@font-face {
+  font-family: "Overseer";
+  src: url("fonts/Overseer-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Overseer";
+  src: url("fonts/Overseer-Italic.ttf");
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: "Overseer";
+  src: url("fonts/fonts/Overseer-Bold-Italic.ttf");
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #cccccc;
+}
+
+header, footer {
+  background-color: #e8bf28;
+  color: #000;
+  padding: 4px 0px;
+}
+
+footer {
+  text-align: center;
+}
+
+header h1 {
+  margin: 0px;
+}
+
+header a, footer a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.headerLogo {
+  height: 40px;
+  width: 40px;
+  vertical-align: text-top;
+}
+
+.headerTitle {
+  font-family: Overseer, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  background-color: #e8bf28;
+  color: #000;
+  padding: 4px;
+}
