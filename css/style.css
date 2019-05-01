@@ -1,20 +1,24 @@
 @font-face {
   font-family: "Overseer";
-  src: url("fonts/Overseer.ttf");
+  src: url("../fonts/Overseer.ttf");
+  font-style: normal;
 }
+
 @font-face {
   font-family: "Overseer";
-  src: url("fonts/Overseer-Bold.ttf");
+  src: url("../fonts/Overseer-Bold.ttf");
   font-weight: bold;
 }
+
 @font-face {
   font-family: "Overseer";
-  src: url("fonts/Overseer-Italic.ttf");
+  src: url("../fonts/Overseer-Italic.ttf");
   font-style: italic, oblique;
 }
+
 @font-face {
   font-family: "Overseer";
-  src: url("fonts/fonts/Overseer-Bold-Italic.ttf");
+  src: url("../fonts/Overseer-Bold-Italic.ttf");
   font-weight: bold;
   font-style: italic, oblique;
 }
