@@ -7,7 +7,10 @@
 body {
   background-color: #1c1c1c;
   color: #cccccc;
+  display: flex;
+  flex-direction: column;
   font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
 }
 
 header, footer {
@@ -20,8 +23,11 @@ header {
 }
 
 footer {
+  margin: auto;
+  margin-bottom: 0;
   text-align: center;
   padding: 2px 0px;
+  width: 100%;
 }
 
 header a, footer a {
