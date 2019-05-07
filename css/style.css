@@ -40,7 +40,6 @@ main {
 }
 
 .boxIntro {
-  font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   background-color: #333;
   display: flex;
