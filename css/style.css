@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Overseer";
-  src: url("../fonts/Overseer.ttf");
   font-style: normal;
+  src: url("../fonts/Overseer.ttf");
 }
 
 body {
   background-color: #1c1c1c;
-  color: #cccccc;
+  color: #ccc;
   display: flex;
   flex-direction: column;
   font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 header, footer {
@@ -23,35 +23,61 @@ header {
 }
 
 footer {
-  margin: auto;
   margin-bottom: 0;
-  text-align: center;
+  margin: auto;
   padding: 2px 0px;
+  text-align: center;
   width: 100%;
 }
 
 header a, footer a {
-  text-decoration: inherit;
   color: inherit;
+  text-decoration: inherit;
+}
+
+main {
+  flex: 1;
+}
+
+.boxIntro {
+  font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em auto;
+  max-width: 1000px;
+  padding: 2em 0px;
+  border-radius: 45px;
+}
+
+.boxIntro blockquote {
+  margin-left: 20px;
+}
+
+.boxIntro img {
+  margin-left: 20px;
 }
 
 .headerLogo {
   display: inline-block;
   float: left;
   height: 60px;
-  width: 60px;
   padding: 5px;
+  width: 60px;
 }
 
 .headerMaintitle {
   font-family: Overseer, Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
   font-size: 40px;
+  font-style: italic;
   margin: 0px;
 }
 
 .headerSubtitle {
-  font-size: 18px;
+  font-family: Barlow, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
   margin: 0px;
 }
 
@@ -59,10 +85,15 @@ header a, footer a {
   background-image: url(../img/github-corner-right.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 70px;
   height: 70px;
+  mix-blend-mode: multiply;
   position: absolute;
   right: 0;
   top: 0;
-  mix-blend-mode: multiply;
+  width: 70px;
+}
+
+.quoteAuthor {
+  float: right;
+  text-align: right;
 }
