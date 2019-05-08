@@ -9,8 +9,18 @@ body {
   color: #ccc;
   display: flex;
   flex-direction: column;
+  flex-flow: row wrap;
   font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+body>* {
+  flex: 1 100%;
+}
+
+aside {
+  display: none;
+  width: 20%;
 }
 
 header, footer {
@@ -20,11 +30,12 @@ header, footer {
 
 header {
   padding-bottom: 5px;
+  height: 70px;
 }
 
 footer {
-  margin-bottom: 0;
   margin: auto;
+  margin-bottom: 0;
   padding: 2px 0px;
   text-align: center;
   width: 100%;
@@ -36,7 +47,7 @@ header a, footer a {
 }
 
 main {
-  flex: 1;
+  min-height: 90vh;
 }
 
 .boxIntro {
@@ -95,4 +106,24 @@ main {
 .quoteAuthor {
   float: right;
   text-align: right;
+}
+
+@media all and (min-width: 800px) {
+  aside {
+    display: block;
+    flex: 1 0 0;
+  }
+  .sidebarLeft {
+    order: 1;
+  }
+  main {
+    flex: 3 0px;
+    order: 2;
+  }
+  .sidebarRight {
+    order: 3;
+  }
+  footer {
+    order: 4;
+  }
 }
