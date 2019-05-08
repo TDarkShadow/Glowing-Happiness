@@ -50,6 +50,10 @@ main {
   min-height: 90vh;
 }
 
+ul {
+  padding-left: 20px;
+}
+
 .boxIntro {
   font-size: 18px;
   background-color: #333;
