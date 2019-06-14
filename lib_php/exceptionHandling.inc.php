@@ -60,7 +60,7 @@ function exceptionHandling($_exception, $_logfile)
   }
 
 // exception log
-  $_error_log[1] = strftime("%d-%m-%Y %H:%M:%S");
+  $_error_log[1] = strftime("%d-%m-%Y %H:%M:%S", time());
   $_error_log[2] = $_exception->getMessage();
   $_error_log[3] = $_exception->getFile();
   $_error_log[4] = $_exception->getLine();
