@@ -2,7 +2,7 @@
 try {
     require_once("../lib_php/initialization.inc.php");
     require_once("../lib_php/readIn.inc.php");
-    $_content = readIn('../html/A_Home.html');
+    $_content = readIn('../html/Core.html');
     $_smarty->assign('content', $_content);
     $_smarty->display('index.tpl');
 }
