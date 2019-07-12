@@ -1,16 +1,17 @@
+/* Fonts */
+
 @font-face {
   font-family: "Overseer";
   font-style: normal;
   src: url("../fonts/Overseer.ttf");
 }
 
+/* Layout */
+
 body {
-  background-color: #1c1c1c;
-  color: #fff;
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
-  font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
 }
 
@@ -23,11 +24,6 @@ aside {
   width: 20%;
 }
 
-header, footer {
-  background-color: #e8bf28;
-  color: #000;
-}
-
 header {
   padding-bottom: 5px;
   height: 70px;
@@ -36,7 +32,7 @@ header {
 footer {
   margin: auto;
   margin-bottom: 0;
-  padding: 2px 0px;
+  padding: 0px;
   text-align: center;
   width: 100%;
 }
@@ -52,6 +48,10 @@ main {
 
 ul {
   padding-left: 20px;
+}
+
+section {
+  margin: 2px;
 }
 
 .boxIntro {
@@ -130,4 +130,66 @@ ul {
   footer {
     order: 4;
   }
+}
+
+
+/* Style */
+
+body {
+  background-color: #1c1c1c;
+  color: #fff;
+  font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, footer {
+  background-color: #e8bf28;
+  color: #000;
+}
+
+.btnModule {
+  background-color: #e8bf28;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btnModule > img {
+  height: 100px;
+  width: 100px;
+}
+
+.btnModule:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.btnModule:hover > img {
+  filter: invert(100%);
+}
+
+.divModule {
+  border: #e8bf28 1px solid;
+  width: 50%;
+  margin: auto;
+}
+
+.divModule:hover {
+  border: #e8bf28 1px solid;
+  margin: auto;
+}
+
+.spnModule {
+  font-family: Overseer, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3em;
+}
+
+.pModule {
+  text-align: center;
+  width: 100%;
 }
